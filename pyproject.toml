@@ -1,0 +1,17 @@
+[project]
+name = "ai-music-composer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "maskedwolf4", email = "meetwadekar7@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+ai-music-composer = "ai_music_composer:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
