@@ -17,9 +17,9 @@ if st.button("Generate Music") and music_input:
     generator = MusicLLM()
     
     with st.spinner("Generating Music"):
-        melody = generator.generate_melody(music_input)
-        harmony = generator.generate_harmony(melody)
-        rhythm = generator.generate_rhythm(melody)
+        melody = generator.generate_melody(music_input, style)
+        harmony = generator.generate_harmony(melody, style)
+        rhythm = generator.generate_rhythm(melody, style)
         composition = generator.adapt_style(style, melody, harmony, rhythm)
         
         melody_notes = melody.split()
@@ -34,7 +34,7 @@ if st.button("Generate Music") and music_input:
         
         all_freqs = melody_freqs+harmony_freqs
         
-        wav_bytes = generate_wav_bytes_from_notes_freq(all_freqs)
+        wav_bytes = generate_wav_bytes_from_notes_freq(all_freqs, rhythm)
         
     st.audio(BytesIO(wav_bytes), format='audio/wav')
     
