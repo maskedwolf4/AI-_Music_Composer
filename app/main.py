@@ -28,7 +28,7 @@ class MusicLLM:
         chain = prompt | self.llm
         return chain.invoke({"melody" : melody }).content.strip()
     
-    def generate_rythm(self,melody):
+    def generate_rhythm(self,melody):
         """Create beats based on the melody"""
         prompt = ChatPromptTemplate.from_template(
             "Suggest rhythm durations (in beats) for this melody: {melody}. Format: 1.0 0.5 0.5 2.0"
