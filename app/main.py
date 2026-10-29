@@ -17,7 +17,7 @@ class MusicLLM:
         self.llm = ChatGroq(
             temperature=temperature,
             groq_api_key=os.getenv("GROQ_API_KEY"),
-            model_name="openai/gpt-oss-120b",
+            model_name="openai/gpt-oss-20b",
         )
 
     def generate_melody(self, user_input, style):
