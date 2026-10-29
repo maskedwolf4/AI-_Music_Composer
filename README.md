@@ -71,8 +71,8 @@ is intentionally spelled `uitls` in the current project).
 1. Clone the repository and enter the project directory:
 
    ```bash
-   git clone <repository-url>
-   cd AI_Music_Composer
+   git clone https://github.com/maskedwolf4/AI-_Music_Composer
+   cd AI-_Music_Composer
    ```
 
 2. Install `uv` if it is not already available. See the
