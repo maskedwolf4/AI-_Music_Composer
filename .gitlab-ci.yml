@@ -6,7 +6,7 @@ stages:
   - deploy
 
 variables:
-  PROJECT_ID: "gen-lang-client-0729539659"
+  PROJECT_ID: "gen-lang-client-0827529680"
   REGION: "us-central1"
   REPO: "llmops-repo"
   REGISTRY: "us-central1-docker.pkg.dev"
